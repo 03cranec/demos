@@ -7,9 +7,11 @@
     "dev": "moose-cli dev"
   },
   "dependencies": {
-    "axios": "^1.7.7",
-    "ts-patch": "^3.3.0",
     "@514labs/moose-lib": "latest",
+    "@types/dotenv": "^6.1.1",
+    "axios": "^1.7.7",
+    "dotenv": "^16.5.0",
+    "ts-patch": "^3.3.0",
     "typia": "^7.6.0"
   },
   "devDependencies": {

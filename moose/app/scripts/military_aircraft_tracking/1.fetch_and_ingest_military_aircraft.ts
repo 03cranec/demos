@@ -1,5 +1,9 @@
 import { TaskFunction, TaskDefinition } from "@514labs/moose-lib";
 import * as http from "http";
+import * as dotenv from "dotenv";
+
+// Load environment variables
+dotenv.config();
 
 // Define interfaces for the API response and task data
 interface AircraftData {
@@ -100,7 +104,7 @@ async function mapToAircraftTrackingData(
 
 async function sendToMoose(data: any, endpoint: string): Promise<void> {
   const options = {
-    hostname: "localhost",
+    hostname: process.env.MOOSE_HOST || "localhost",
     port: 4000,
     path: `/ingest/${endpoint}`,
     method: "POST",
