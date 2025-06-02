@@ -22,7 +22,7 @@ export interface uk_price_paid {
     postcode1: Key<string>;
     postcode2: Key<string>;
     type: Type2;
-    isNew: number & ClickHouseInt<"uint8">;
+    is_new: number & ClickHouseInt<"uint8">;
     duration: Duration;
     addr1: Key<string>;
     addr2: Key<string>;
