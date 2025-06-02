@@ -7,7 +7,7 @@
     "dev": "moose-cli dev"
   },
   "dependencies": {
-    "@514labs/moose-lib": "latest",
+    "@514labs/moose-lib": "0.4.193",
     "@types/dotenv": "^6.1.1",
     "axios": "^1.7.7",
     "dotenv": "^16.5.0",
@@ -15,7 +15,7 @@
     "typia": "^7.6.0"
   },
   "devDependencies": {
-    "@514labs/moose-cli": "latest",
+    "@514labs/moose-cli": "0.4.193",
     "@types/node": "^20.12.12"
   }
 }
