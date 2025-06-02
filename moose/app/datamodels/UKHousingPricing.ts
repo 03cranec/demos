@@ -32,3 +32,10 @@ export interface uk_price_paid {
     district: string;
     county: string;
 }
+
+
+export const UkPricePaidPipeline = new IngestPipeline<uk_price_paid>("uk_price_paid", {
+    table: true,
+    stream: true,
+    ingest: true,
+});
